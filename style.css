@@ -22,7 +22,10 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding-top: 2%;
-    padding-right: 40%;
+    padding-right: 8%;
+    .active {
+        color: #ff0b0b;
+    }
 }
 
 /*----------------------------------------------------------------------------- */
@@ -50,7 +53,8 @@ nav ul li {
 nav ul li a {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: 20px;
     text-transform: capitalize;
 }
 nav ul li a:hover {
@@ -120,7 +124,7 @@ h4 {
 .aboutme {
     width: 100%;
     padding: 100px 0px;
-    background: rgb(21, 21, 21);
+    background: rgba(21, 21, 21, 1);
     img {
         width: 430px;
         border: 5px solid black;
@@ -180,17 +184,43 @@ button:hover {
 
 /*----------------------------------------------------------------------------- */
 /*contact sectie*/
-.contact {
-    background: black;
+.socials {
+    background-image: url(../media/Background.png);
+    background-size: cover;
+    background-position: center;
     width: 100%;
     padding: 100px 0px;
 }
 .title h2 {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 75px;
     width: 1130px;
     margin: 30px auto;
     text-align: center;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card {
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: rgb(21, 21, 21, 1);
+    border-radius: 30px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+}
+.button {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-size: 20px;
 }
 
 /*----------------------------------------------------------------------------- */
