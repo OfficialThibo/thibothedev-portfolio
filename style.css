@@ -152,6 +152,7 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 20px;
 }
 
 .about-text p {
@@ -176,64 +177,17 @@ button:hover {
     box-shadow: 0px 0px 5px black, 0px 0px 15px black;
     transform: scale(1.1);
 }
-@media screen and (max-width: 750px) {
-    .aboutme {
-        width: 100%;
-        padding: 100px 0px;
-        background: rgb(21, 21, 21);
-        img {
-            width: 430px;
-            border: 5px solid black;
-            border-radius: 30px;
-        }
-        h2,
-        h5,
-        p {
-            color: white;
-        }
-        h2 {
-            font-size: 75px;
-            text-transform: capitalize;
-            margin-bottom: 20px;
-        }
-        h5 {
-            letter-spacing: 2px;
-            font-size: 22px;
-            margin-bottom: 25px;
-        }
-    }
-    .about-text {
-        width: 550px;
-    }
-    .main2 {
-        width: 1140px;
-        max-width: 95%;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
 
-    .about-text p {
-        letter-spacing: 1px;
-        line-height: 28px;
-        font: 18px;
-        margin-bottom: 45px;
-    }
-    button {
-        background-color: rgb(255, 22, 22);
-        color: white;
-        text-decoration: none;
-        border: 2px solid transparent;
-        font-weight: bold;
-        padding: 13px 30px;
-        border-radius: 30px;
-        transition: 0.4s;
-        box-shadow: 0px 0px 5px #b3b3b3, 0px 0px 15px #ff0b0b;
-    }
-    button:hover {
-        background-color: transparent;
-        box-shadow: 0px 0px 5px black, 0px 0px 15px black;
-        transform: scale(1.1);
+/*----------------------------------------------------------------------------- */
+/*contact sectie*/
+.contact {
+    color: black;
+}
+
+/*----------------------------------------------------------------------------- */
+/* Telefoon optie */
+@media screen and (max-width: 750px) {
+    .main2 {
+        flex-direction: column;
     }
 }
