@@ -203,6 +203,9 @@ button:hover {
     justify-content: center;
     align-items: center;
     min-height: 400px;
+    h5 {
+        font-size: 25px;
+    }
 }
 .card {
     height: 365px;
@@ -242,7 +245,15 @@ button:hover {
 .fa-twitter {
     color: #00acee;
 }
-
+.fa-bars {
+    font-size: 50px;
+}
+.fa-unity {
+    font-size: 50px;
+}
+.fa-artstation {
+    font-size: 50px;
+}
 /*----------------------------------------------------------------------------- */
 /* Telefoon optie */
 @media screen and (max-width: 750px) {
