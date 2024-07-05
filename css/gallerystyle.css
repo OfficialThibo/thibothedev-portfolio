@@ -1,10 +1,6 @@
-ul{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-    li{
-        img{
-            width: 100px;
-        }
-    }
-    
+@import url('https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+
+.Pictures{
+    display: flex;
+    list-style-type: none;
 }
