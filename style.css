@@ -147,7 +147,7 @@ h4 {
 }
 .main2 {
     width: 1140px;
-    max-width: 95%;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -180,6 +180,18 @@ button:hover {
 
 /*----------------------------------------------------------------------------- */
 /*contact sectie*/
+.contact {
+    background: black;
+    width: 100%;
+    padding: 100px 0px;
+}
+.title h2 {
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
 
 /*----------------------------------------------------------------------------- */
 /* Telefoon optie */
