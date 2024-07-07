@@ -1,132 +1,67 @@
 @import url("https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap");
 
-/* Hoofd Web Dingen */
-.main {
-    height: 100vh;
-    width: 100%;
-    background-image: url(../media/Background.png);
-    background-size: cover;
-    background-position: center;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 2%;
-    padding-right: 8%;
-    .active {
-        color: #ff0b0b;
-    }
-}
-
-.logo {
-    color: white;
-    text-transform: uppercase;
-    padding-left: 8%;
-    font-size: 35px;
-    letter-spacing: 3px;
-}
-span {
-    color: rgb(255, 26, 26);
-}
-.discriptionlogo {
-    font-size: 20px;
-}
-
-nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 10px 25px;
-    font-family: Wittgenstein;
-}
-nav ul li a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-weight: bolder;
-    font-size: 20px;
-    text-transform: capitalize;
-}
-nav ul li a:hover {
-    color: rgb(255, 4, 4);
-    transition: 0.4s;
-}
-
 /* Images */
-h1 {
-    color: white;
-    font-size: 75px;
-    padding: 0 auto;
-    margin: 0 auto;
+body {
+    padding: 0;
+    margin: 0;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    letter-spacing: 8px;
 }
-
+h1 {
+    color: white;
+    font-size: 80px;
+    font-family: Wittgenstein;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 2px;
+    padding-top: 70px;
+}
 .container {
-    width: 80%;
     height: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     position: relative;
-    h2 {
-        color: white;
-    }
+    padding-top: 100px;
+    padding-bottom: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 20%;
 }
-
 .img-ctr {
-    width: 22%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     position: relative;
     background-color: black;
     transform-origin: center;
-    transform: perspective(800px) rotateY("25deg");
+    transform: perspective(800px) rotateY(25deg);
     transition: 0.5s;
+    border-radius: 15px;
+    cursor: pointer;
 }
-
-/*----------------------------------------------------------------------------- */
-/* footer */
-footer {
-    position: relative;
-    width: 100%;
-    height: 100px;
-    padding: 100px 0px;
-    background: rgba(21, 21, 21, 1);
-    display: flex;
-    font-weight: bold;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-footer p:nth-child(1) {
-    font-size: 30px;
-    color: white;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-footer p:nth-child(2) {
-    color: white;
-    font-size: 17px;
-    width: px;
-    text-align: center;
-    line-height: 26px;
-}
-.end {
+.container h2 {
     position: absolute;
     color: white;
-    bottom: 35px;
-    font-size: 14px;
-    left: 35px;
+    z-index: 1;
+    font-size: 55px;
+    font-weight: bold;
+    font-family: "Satisfy", cursive;
+    rotate: 355deg;
+    transform: skew(355deg, 355deg);
+    top: 120;
+    transition: 0.2s;
+    transition-delay: 0.35s;
+    opacity: 0;
 }
-.end2 {
-    position: absolute;
-    color: white;
-    bottom: 35px;
-    font-size: 14px;
-    right: 35px;
+.img-ctr:hover {
+    transform: perspective(800px) rotateY(0deg);
+}
+.img-ctr:hover img {
+    filter: grayscale(0%);
+    opacity: 0.5;
+}
+.img-ctr:hover h2 {
+    top: 130px;
+    opacity: 1;
 }
