@@ -205,7 +205,7 @@ button:hover {
     align-items: center;
     min-height: 400px;
 }
-.card {
+.box .card {
     height: 365px;
     width: 335px;
     padding: 20px 35px;
